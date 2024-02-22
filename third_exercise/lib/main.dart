@@ -92,25 +92,33 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15.0),
-                                child: Icon(
-                                  FontAwesomeIcons.crown,
-                                  size: 12,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 15.0),
+                              child: Icon(
+                                FontAwesomeIcons.crown,
+                                size: 12,
+                                color: Colors.red.shade800,
+                              ),
+                            ),
+                            Text(
+                              "   =  ${_driversChampionship[index]}x",
+                              style: TextStyle(
                                   color: Colors.red.shade800,
-                                ),
-                              ),
-                              Text(
-                                "   =  ${_driversChampionship[index]}x",
-                                style: TextStyle(
-                                    color: Colors.red.shade800,
-                                    fontSize: 15,
-                                    fontFamily: "Persona",
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
+                                  fontSize: 15,
+                                  fontFamily: "Persona",
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          "Idade  =  ${_driversAge[index]}",
+                          style: TextStyle(
+                              color: Colors.red.shade800,
+                              fontSize: 15,
+                              fontFamily: "Persona",
+                              fontWeight: FontWeight.bold),
+                        ),
                       ],
                     ),
                   ],
